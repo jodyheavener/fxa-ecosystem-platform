@@ -1,12 +1,11 @@
 ---
 sidebar_position: 1
+title: Welcome!
 sidebar_label: Introduction
 slug: /
 ---
 
-# Welcome to our docs
-
-This is very early-stage documentation hub for Firefox Accounts, Services, Synced Client Integrations, and Subscription Platform.
+**Welcome to the Ecosystem Platform docs.** The goal of this site is to serve as a documentation hub for Firefox Accounts, Services, Synced Client Integrations, and Subscription Platform, which collectively make up the Ecosystem Platform. It provides detailed breakdowns of the various components that make up these services, including technical references, guides, concepts, deep-dives, and much more.
 
 ## About this site
 

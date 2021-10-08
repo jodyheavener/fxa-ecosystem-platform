@@ -18,3 +18,56 @@ $> yarn start
 ```
 
 That should open a new browser window automatically, or you can manually browse to http://localhost:3000/ecosystem-platform/ to view the docs. You can add and modify files under `/docs` to update the actual Markdown documentation, everything else is configuration and code for the site itself.
+
+
+
+
+
+
+//////
+
+- Developer Reference
+  - Development setup
+  - Release Process
+  - Using VSCode with FxA
+
+- FxA Services
+  - Content server
+    - Overview
+    - Testing
+  - Auth server
+    - Overview
+    - Testing
+  - Profile server
+    - Overview
+    - Testing
+  - GraphQL API
+    - Overview
+    - Testing
+
+- Platform Concepts
+  - Firefox Accounts
+    - Overview
+    – Integration with FxA
+    – End-to-end Encryption
+    – Metrics
+    – Pairing authentication
+  - Subscription Platform
+    - Overview
+    - Subscription Features
+    - Integration with Subscription Platform
+  - Firefox Push
+    - Overview
+    - Design, API's, Error Codes
+    - Development Process
+    - History
+  - Firefox Sync
+    - Overview
+    - Password Management and Syncing
+    - Bookmarks
+    - Storage
+    - History
+    - Account Management
+    - Becoming A Sync Client
+    - Sync Testing
+    - Using the Staging Environment
