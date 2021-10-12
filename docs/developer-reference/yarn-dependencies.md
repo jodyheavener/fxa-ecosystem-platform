@@ -26,4 +26,4 @@ We use GitHub's [Dependabot](https://docs.github.com/en/code-security/supply-cha
 
 It [runs daily](https://github.com/mozilla/fxa/blob/main/.github/dependabot.yml), opening Pull Requests whenever a update is available for any of our many packages' dependencies. PRs will automatically request a review from the `@mozilla/fxa-devs` GitHub group. FxA engineers are expected to occasionally pitch in with reviewing and merging these PRs.
 
-[Click here](https://github.com/mozilla/fxa/pulls?q=is:pr is:open sort:updated-desc author:app/dependabot ) to see all open Dependabot PRs.
+[Click here](https://github.com/mozilla/fxa/pulls?q=is:pr+is:open+sort:updated-desc+author:app/dependabot) to see all open Dependabot PRs.
