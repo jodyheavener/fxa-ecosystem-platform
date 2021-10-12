@@ -32,7 +32,11 @@ import TabItem from '@theme/TabItem';
   `yarn start` starts up **all** required services via PM2. This includes Redis, MySQL, and Memcached. It is recommended that you don't run these services yourself, or occupy any of the server ports (check out our [PM2 configs](https://github.com/search?type=code&q=repo:mozilla/fxa+filename:pm2.config.js+filename:infrastructure.config.js)). Doing so may result in errors.
   :::
 
-1. Once your services have all started up you should now be able to [visit FxA locally](http://localhost:3030).
+1. Once your services have all started up you should now be able to [visit FxA locally](http://localhost:3030). Next up you may want to [create an account](./local-accounts).
+
+:::tip
+FxA should only be accessed locally using the `localhost` host, and not via `127.0.0.1`.
+:::
 
 ### Handy commands
 
@@ -47,6 +51,7 @@ yarn stop
 
 # Display logs for all services
 yarn pm2 logs
+
 # Display logs for just the `auth` service
 yarn pm2 logs auth
 
@@ -58,6 +63,10 @@ yarn pm2 stop content
 ```
 
 Check out the [PM2 docs](https://github.com/Unitech/PM2) for more commands. If you're using VS Code there is also a [handy extension](./vscode-development) for managing PM2 services.
+
+:::tip
+To avoid wasting computer resources while not working on FxA make sure to stop the servers using `yarn stop`. Once you are back working on FxA just use the `yarn start` command to bring the servers back up.
+:::
 
 ## Dependencies
 
@@ -182,15 +191,43 @@ Finally, manually install the following:
 
 ## Secrets
 
-Lorem ipsum
+When developing locally you may need to set up some secrets in order to effectively work with certain services. These secrets are managed at the package level.
+
+Check out the Secrets section in the following package documentation:
+
+- [Auth Server](#UPDATE-ME)
+- [Payments Server](#UPDATE-ME)
 
 ## Testing
 
-Lorem ipsum
+:::tip
+While it is possible to run the entire code base's test suite, in development you'll likely want to run a specific test or a subset of tests. Please refer to each package's documentation for detailed instructions on how to test its respective code.
+:::
 
-## Example Workflow
+### Test all or some packages
 
-Lorem ipsum
+:::note
+You might need to run `yarn start infrastructure` to start services before running tests.
+:::
+
+From the root directory you may test all or some FxA packages:
+
+```shell
+# Test only `fxa-shared`
+yarn test fxa-shared
+
+# Test `fxa-auth-db-mysql` and `fxa-auth-server`
+yarn test fxa-auth-db-mysql fxa-auth-server
+
+# Test all packages
+yarn test all
+```
+
+The above commands invoke the same tests that CI uses, and is not necessarily the same as running yarn test in any given package.
+
+### Emulating a CI environment
+
+It is possible to run various test suites (known as Jobs) acting as CircleCI. This is useful if you're encountering CI-specific failures. Please refer to [this documentation](#UPDATE-ME).
 
 ## Contributing
 
