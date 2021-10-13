@@ -54,7 +54,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Mozilla Corporation.`,
       },
