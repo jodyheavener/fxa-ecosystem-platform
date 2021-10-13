@@ -2,6 +2,8 @@
 title: Creating an Account Locally
 ---
 
+[TODO: tutorial video]
+
 Once you've got FxA running locally you'll probably want to create an account that you can use for development and testing purposes. This process can be done almost exactly like you would in production:
 
 1. Visit the [root page](http://localhost:3030/), which should ask you to enter your email. Enter the email you want to use for the account.

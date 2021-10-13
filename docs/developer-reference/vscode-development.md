@@ -61,7 +61,7 @@ learn more features available is the [LiveShare feature overview][liveshare-feat
 ### Collaborator Commits
 
 When working collaboratively, the final commit should reflect all the collaborators that
-worked on it. [Github properly displays commits written with the `Co-Authored-by`][github-coauthor]
+worked on it. [GitHub properly displays commits written with the `Co-Authored-by`][github-coauthor]
 line appended to the commit message.
 
 ## Remote Development via SSH
@@ -244,7 +244,7 @@ randomly generated password you keep in a password manager.
    on the server
 1. Tell git about your gpg key
 1. Auto-sign commits per project or everywhere
-1. Add your GPG public key to your Github account
+1. Add your GPG public key to your GitHub account
 1. Ensure that your bash account prompts you for the GPG passphrase correctly by
    editing your `~/.bashrc` with:
 

@@ -2,6 +2,8 @@
 title: Local Emails with MailDev
 ---
 
+[TODO: tutorial video]
+
 If you're interested in receiving emails locally you can use [MailDev](https://www.npmjs.com/package/maildev) to intercept emails and display them in a local inbox.
 
 Here's how to do it:
